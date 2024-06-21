@@ -8,12 +8,12 @@ function exibirTextoNaTela(tag, texto){
 }
 function exibirMensagemInicial(){
     exibirTextoNaTela("h1", "Jogo do número secreto")
-    exibirTextoNaTela("p", "Escolha entre 1 e 100.")
+    exibirTextoNaTela("p", "Escolha entre 1 e 10.")
 }
 exibirMensagemInicial()
 
 function gerarNumeroAleatorio(){
-    return parseInt(Math.random() * 100 + 1)
+    return parseInt(Math.random() * 10 + 1)
 }
 
 function verificarChute(){
